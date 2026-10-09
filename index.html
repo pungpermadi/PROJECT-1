@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portofolio personal Ipung Permadi — Music Director. Olah rasa dengan suara." />
+  <meta name="author" content="Ipung Permadi" />
+  <title>Ipung Permadi — Music Director</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Animated gradient background + particles -->
+  <div class="bg-gradient" aria-hidden="true"></div>
+  <canvas id="particles" class="particles" aria-hidden="true"></canvas>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <nav class="nav container" aria-label="Navigasi utama">
+      <a href="#hero" class="nav__logo">
+        <span class="nav__logo-mark">IP</span>
+        <span class="nav__logo-text">Ipung Permadi</span>
+      </a>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#hero" class="nav__link active">Beranda</a></li>
+        <li><a href="#about" class="nav__link">Tentang</a></li>
+        <li><a href="#projects" class="nav__link">Project</a></li>
+        <li><a href="#experience" class="nav__link">Pengalaman</a></li>
+        <li><a href="#testimonials" class="nav__link">Testimoni</a></li>
+        <li><a href="#contact" class="nav__link">Kontak</a></li>
+      </ul>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero section" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="badge">
+            <span class="badge__dot"></span>
+            Available for opportunities
+          </span>
+
+          <h1 class="hero__title">
+            Halo, saya <span class="gradient-text">Ipung Permadi</span>
+          </h1>
+
+          <h2 class="hero__typed">
+            <span id="typewriter"></span><span class="cursor">|</span>
+          </h2>
+
+          <p class="hero__tagline">"Olah rasa dengan suara."</p>
+
+          <p class="hero__desc">
+            Music Director berbasis di Jakarta, Indonesia. Menghadirkan pengalaman
+            musikal yang harmonis, ekspresif, dan berkesan.
+          </p>
+
+          <div class="hero__cta">
+            <a href="#projects" class="btn btn--primary">Lihat Project</a>
+            <a href="assets/profile.png" download class="btn btn--ghost">Download Resume</a>
+          </div>
+
+          <ul class="hero__socials">
+            <li><a href="https://github.com/ipungpermadidev" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/ipungpermadidev" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a></li>
+            <li><a href="https://x.com/ipungpermadidev" target="_blank" rel="noopener" aria-label="Twitter / X">Twitter / X</a></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__photo-wrap float">
+            <div class="hero__glow"></div>
+            <img src="assets/profile.png" alt="Foto profil Ipung Permadi" class="hero__photo" />
+            <div class="hero__ring"></div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Gulir ke bawah">
+        <span class="scroll-hint__mouse"><span></span></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about section" id="about">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__eyebrow">01 — Tentang</span>
+          <h2 class="section__title">Tentang Saya</h2>
+        </header>
+
+        <div class="about__grid">
+          <div class="glass about__bio reveal">
+            <p>
+              Ipung Permadi is a Music Director with a deep passion for the world of
+              music, artistic creativity, and the development of musical excellence.
+              With a strong understanding of musical arrangement, interpretation, and
+              performance management, they are committed to delivering musical
+              experiences that are harmonious, expressive, and memorable.
+            </p>
+            <ul class="about__highlights">
+              <li><span class="dot"></span> Direct Scores Movie Music</li>
+              <li><span class="dot"></span> Musical Arrangement &amp; Interpretation</li>
+              <li><span class="dot"></span> Performance Management</li>
+            </ul>
+          </div>
+
+          <div class="about__stats">
+            <div class="glass stat reveal">
+              <span class="stat__num">10+</span>
+              <span class="stat__label">Tahun Pengalaman</span>
+            </div>
+            <div class="glass stat reveal">
+              <span class="stat__num">50+</span>
+              <span class="stat__label">Aransemen Selesai</span>
+            </div>
+            <div class="glass stat reveal">
+              <span class="stat__num">15+</span>
+              <span class="stat__label">Scoring Film</span>
+            </div>
+            <div class="glass stat reveal">
+              <span class="stat__num">100%</span>
+              <span class="stat__label">Dedikasi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__eyebrow">02 — Portofolio</span>
+          <h2 class="section__title">Project Pilihan</h2>
+        </header>
+
+        <div class="projects__grid">
+          <!-- Project 1 -->
+          <article class="glass card project reveal">
+            <div class="project__media">
+              <div class="project__thumb" data-icon="♪"></div>
+              <div class="project__overlay">
+                <a href="https://github.com/ipungpermadidev" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">GitHub</a>
+                <a href="https://www.ipungpermadi.dev" target="_blank" rel="noopener" class="btn btn--sm btn--primary">Live Demo</a>
+              </div>
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">Score Music</h3>
+              <p class="project__desc">Aransemen SATB.</p>
+              <ul class="tags">
+                <li>SATB</li><li>Scoring</li><li>Harmony</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="glass card project reveal">
+            <div class="project__media">
+              <div class="project__thumb" data-icon="🎬"></div>
+              <div class="project__overlay">
+                <a href="https://github.com/ipungpermadidev" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">GitHub</a>
+                <a href="https://www.ipungpermadi.dev" target="_blank" rel="noopener" class="btn btn--sm btn--primary">Live Demo</a>
+              </div>
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">Aranger Music Movie</h3>
+              <p class="project__desc">Aransemen music modern.</p>
+              <ul class="tags">
+                <li>Modern</li><li>Film</li><li>Arrangement</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="glass card project reveal">
+            <div class="project__media">
+              <div class="project__thumb" data-icon="🎼"></div>
+              <div class="project__overlay">
+                <a href="https://github.com/ipungpermadidev" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">GitHub</a>
+                <a href="https://www.ipungpermadi.dev" target="_blank" rel="noopener" class="btn btn--sm btn--primary">Live Demo</a>
+              </div>
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">Orchestral Suite</h3>
+              <p class="project__desc">Komposisi orkestra sinematik untuk pertunjukan panggung.</p>
+              <ul class="tags">
+                <li>Orchestra</li><li>Cinematic</li><li>Live</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK EXPERIENCE ============ -->
+    <section class="experience section" id="experience">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__eyebrow">03 — Perjalanan</span>
+          <h2 class="section__title">Pengalaman Kerja</h2>
+        </header>
+
+        <div class="timeline">
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <div class="glass timeline__card">
+              <span class="timeline__period">2023 — Sekarang</span>
+              <h3 class="timeline__role">Director Music</h3>
+              <p class="timeline__company">Twilight Orchestra</p>
+              <p class="timeline__desc">
+                Memimpin arah musikal, aransemen, dan manajemen pertunjukan orkestra.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__eyebrow">04 — Testimoni</span>
+          <h2 class="section__title">Apa Kata Mereka</h2>
+        </header>
+
+        <div class="testimonials__grid">
+          <figure class="glass card testimonial reveal">
+            <blockquote>
+              "Ipung is an exceptional engineer who consistently delivers beyond
+              expectations. His ability to bridge AI capabilities with practical user
+              needs is remarkable. He transformed our platform's intelligence layer in
+              a way that measurably improved user engagement."
+            </blockquote>
+            <figcaption class="testimonial__author">
+              <span class="testimonial__avatar">AF</span>
+              <span>
+                <strong>Ahmad Fauzi</strong>
+                <small>CTO, Prestasi Junior Indonesia</small>
+              </span>
+            </figcaption>
+          </figure>
+
+          <figure class="glass card testimonial reveal">
+            <blockquote>
+              "Working with Ipung was a pleasure. He has a rare talent for turning
+              complex data into clear, actionable insights. His dashboards became the
+              go-to tool for our entire leadership team, and he always brought ideas
+              that went far beyond the initial brief."
+            </blockquote>
+            <figcaption class="testimonial__author">
+              <span class="testimonial__avatar">SR</span>
+              <span>
+                <strong>Siti Rahayu</strong>
+                <small>Product Manager, PT Indo</small>
+              </span>
+            </figcaption>
+          </figure>
+
+          <figure class="glass card testimonial reveal">
+            <blockquote>
+              "Ipung's technical depth combined with his product mindset makes him
+              stand out. He delivered a full-stack AI feature in record time without
+              compromising code quality. I'd recommend him without hesitation to any
+              team looking for a high-impact engineer."
+            </blockquote>
+            <figcaption class="testimonial__author">
+              <span class="testimonial__avatar">BS</span>
+              <span>
+                <strong>Budi Santoso</strong>
+                <small>Lead Engineer, PT. Technesia</small>
+              </span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__eyebrow">05 — Kontak</span>
+          <h2 class="section__title">Mari Berkolaborasi</h2>
+        </header>
+
+        <div class="contact__grid">
+          <div class="glass contact__info reveal">
+            <h3>Informasi Kontak</h3>
+            <ul class="contact__list">
+              <li><span class="contact__ico">✉</span><a href="mailto:ipung@prestasijunior.org">ipung@prestasijunior.org</a></li>
+              <li><span class="contact__ico">☎</span><a href="tel:08512345678">0851 2345 678</a></li>
+              <li><span class="contact__ico">⚲</span> Jakarta, Indonesia</li>
+              <li><span class="contact__ico">⬡</span><a href="https://www.ipungpermadi.dev" target="_blank" rel="noopener">www.ipungpermadi.dev</a></li>
+            </ul>
+            <div class="contact__map" aria-label="Peta lokasi (placeholder)">
+              <iframe
+                title="Lokasi Jakarta"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=106.6894%2C-6.3715%2C106.9731%2C-6.0894&layer=mapnik"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <form class="glass contact__form reveal" id="contact-form" novalidate>
+            <div class="field">
+              <label for="name">Nama</label>
+              <input type="text" id="name" name="name" placeholder="Nama lengkap" required />
+              <small class="field__error" data-for="name"></small>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="nama@email.com" required />
+              <small class="field__error" data-for="email"></small>
+            </div>
+            <div class="field">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+              <small class="field__error" data-for="message"></small>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block">Kirim Pesan</button>
+            <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo-mark">IP</span>
+        <p>Ipung Permadi — Music Director</p>
+        <span class="footer__tagline">"Olah rasa dengan suara."</span>
+      </div>
+
+      <nav class="footer__nav" aria-label="Navigasi footer">
+        <a href="#hero">Beranda</a>
+        <a href="#about">Tentang</a>
+        <a href="#projects">Project</a>
+        <a href="#experience">Pengalaman</a>
+        <a href="#testimonials">Testimoni</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+
+      <div class="footer__socials">
+        <a href="https://github.com/ipungpermadidev" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/ipungpermadidev" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://x.com/ipungpermadidev" target="_blank" rel="noopener">Twitter / X</a>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <p>&copy; <span id="year"></span> Ipung Permadi. All rights reserved.</p>
+    </div>
+
+    <button class="to-top" id="to-top" aria-label="Kembali ke atas">↑</button>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
